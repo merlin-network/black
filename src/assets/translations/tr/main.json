@@ -279,22 +279,22 @@
         "emptyWithdraws": "Bekleyen staking istekleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
       },
-      "foxyOverview": {
-        "header": "FOXy'yi kazanmak için FOX yatırın",
-        "body": "FOXy, FOX fiyatına sabitlenmiş bir yeniden değerleme tokenidir. Stake edilmiş FOX, mümkün olan en iyi getiriyi elde etmek için farklı DeFi protokollerinde çalışır.",
+      "jinxyOverview": {
+        "header": "JINXy'yi kazanmak için JINX yatırın",
+        "body": "JINXy, JINX fiyatına sabitlenmiş bir yeniden değerleme tokenidir. Stake edilmiş JINX, mümkün olan en iyi getiriyi elde etmek için farklı DeFi protokollerinde çalışır.",
         "rewards": "Kazandığınız ödüller otomatik olarak tahakkuk edecektir.",
-        "cta": "Şimdi FOX Yatırın",
-        "foxyBalance": "FOXy Bakiyesi",
+        "cta": "Şimdi JINX Yatırın",
+        "jinxyBalance": "JINXy Bakiyesi",
         "withdrawals": "Para Çekme",
         "emptyWithdraws": "Bekleyen veya etkin para çekme işlemleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
       },
-      "foxFarmingOverview": {
-        "header": "Kazanmak için ETH-FOX LP jetonlarını %{opportunity}'e yatırın",
-        "body": "Bonus FOX ödülleri kazanmak için likidite jetonlarınızı onaylayın ve stake edin.",
+      "jinxFarmingOverview": {
+        "header": "Kazanmak için ETH-JINX LP jetonlarını %{opportunity}'e yatırın",
+        "body": "Bonus JINX ödülleri kazanmak için likidite jetonlarınızı onaylayın ve stake edin.",
         "rewards": "Kazandığınız ödüller otomatik olarak tahakkuk edecektir.",
-        "cta": "Şimdi ETH-FOX LP jetonlarını Yatırın",
-        "foxFarmingBalance": "ETH-FOX LP token Bakiyesi",
+        "cta": "Şimdi ETH-JINX LP jetonlarını Yatırın",
+        "jinxFarmingBalance": "ETH-JINX LP token Bakiyesi",
         "withdrawals": "Para çekme",
         "emptyWithdraws": "Bekleyen veya etkin para çekme işlemleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
@@ -405,7 +405,7 @@
     "earnBalance": "Kazanç Bakiyesi",
     "rewardsBalance": "Ödül Bakiyesi",
     "earnBody": "Varlıklarınızı stake ederek veya bir DeFi stratejisine yatırarak pasif gelir elde edin.",
-    "clickHereToEarn": "ETH-FOX likidite havuzu belirteçlerinizi biriktirerek %{apr} APR* kazanmak için burayı tıklayın",
+    "clickHereToEarn": "ETH-JINX likidite havuzu belirteçlerinizi biriktirerek %{apr} APR* kazanmak için burayı tıklayın",
     "overview": "Genel Bakış",
     "myPositions": "Pozisyonlarım",
     "myPositionsBody": "Aktif pozisyonlarınız burada görünecektir.",
@@ -500,7 +500,7 @@
     "overview": "Genel Bakış",
     "transactions": "İşlemler",
     "tradeHistory": "Takas Geçmişi",
-    "foxToken": "FOX Fırsatları",
+    "jinxToken": "JINX Fırsatları",
     "dApps": "dApps",
     "featureFlags": "Özellik Bayrakları",
     "demoMode": "Deneme Modu",
@@ -513,8 +513,8 @@
     "buyCrypto": "Kripto Al/Sat",
     "buyCryptoShort": "Al/Sat",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "FOX Görevleri",
-    "foxMissionsShort": "Görevler"
+    "jinxMissions": "JINX Görevleri",
+    "jinxMissionsShort": "Görevler"
   },
   "transactionRow": {
     "send": "Gönderilen",
@@ -565,7 +565,7 @@
       "thor": {
         "transferOut": "Dışa Aktar"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Stake Et",
         "unstake": "Stake Kaldır",
         "instantUnstake": "Stake'i Anında Geri Al",
@@ -1583,16 +1583,16 @@
     "transfers": "Transferler"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Coinbase'de %{assetSymbol} satın alın",
-      "totalFoxValue": "Toplam FOX Değeri",
-      "foxToken": "ShapeShift %{assetSymbol} Jetonu",
-      "foxDescription": "2019'dan bu yana, ShapeShift FOX Token'ımız, kullanıcılara sürekli genişleyen bir fayda ve avantajlar dünyası sunuyor. Bugün, ERC-20 yönetişim belirtecimiz, oylarınızla ShapeShift'in geleceğini etkilemenizi sağlamakla kalmıyor, aynı zamanda sürekli genişleyen bir yatırım fırsatları evrenine de sahipsiniz. Burada FOX varlıklarınıza yatırım yapın, izleyin ve yönetin.",
+      "totalJinxValue": "Toplam JINX Değeri",
+      "jinxToken": "ShapeShift %{assetSymbol} Jetonu",
+      "jinxDescription": "2019'dan bu yana, ShapeShift JINX Token'ımız, kullanıcılara sürekli genişleyen bir fayda ve avantajlar dünyası sunuyor. Bugün, ERC-20 yönetişim belirtecimiz, oylarınızla ShapeShift'in geleceğini etkilemenizi sağlamakla kalmıyor, aynı zamanda sürekli genişleyen bir yatırım fırsatları evrenine de sahipsiniz. Burada JINX varlıklarınıza yatırım yapın, izleyin ve yönetin.",
       "getAsset": "%{assetSymbol} alın",
       "trade": "Takas",
       "receive": "Al",
       "mainStakingTitle": "%{assetSymbol} Jeton Stake Etme",
-      "mainStakingDescription": "FOX ödüllerini kazanmak için FOX'unuzu tek taraflı staking sözleşmelerinde çalıştırın. (FOX, stake edilirken yönetişimde hala kullanılabilir, ancak bunun dışında staking sırasında sözleşmeye kilitlenir.)",
+      "mainStakingDescription": "JINX ödüllerini kazanmak için JINX'unuzu tek taraflı staking sözleşmelerinde çalıştırın. (JINX, stake edilirken yönetişimde hala kullanılabilir, ancak bunun dışında staking sırasında sözleşmeye kilitlenir.)",
       "tvl": "TVL",
       "currentApy": "Mevcut APY",
       "balance": "Bakiye",
@@ -1602,30 +1602,30 @@
       "tradingUnavailable": "%{assetSymbol}, ShapeShift'te henüz takas edilemez. ElasticSwap'te %{assetSymbol} ile işlem yapabilirsiniz.",
       "tradeOnElasticSwap": "ElasticSwap'te %{assetSymbol} ile işlem yapın",
       "otherOpportunitiesTitle": {
-        "FOX": "Diğer Fırsatlar",
-        "FOXy": "Fırsatlar"
+        "JINX": "Diğer Fırsatlar",
+        "JINXy": "Fırsatlar"
       },
       "otherOpportunitiesDescription": {
-        "FOX": "Likidite sağlama, verim için çiftçilik yapma, borç verme ve borç alma için birçok fırsatı keşfedin. Daha fazla bilgi edinmek ve FOX'unuzu sizin için çalıştırmaya başlamak üzere ilgili harici siteleri ziyaret etmek için aşağıdaki \"Başlayın\" bağlantılarını tıklayın.",
-        "FOXy": "Sektörün hem getiri hem de kâr ödülleri sunan ilk DAO yeniden temellendirme belirteci olan FOXy'yi hızlı ve kolay bir şekilde satın alın."
+        "JINX": "Likidite sağlama, verim için çiftçilik yapma, borç verme ve borç alma için birçok fırsatı keşfedin. Daha fazla bilgi edinmek ve JINX'unuzu sizin için çalıştırmaya başlamak üzere ilgili harici siteleri ziyaret etmek için aşağıdaki \"Başlayın\" bağlantılarını tıklayın.",
+        "JINXy": "Sektörün hem getiri hem de kâr ödülleri sunan ilk DAO yeniden temellendirme belirteci olan JINXy'yi hızlı ve kolay bir şekilde satın alın."
       },
       "liquidityPools": "Likidite Havuzları",
       "farming": "Çiftçilik",
       "borrowingAndLending": "Borç Alma ve Verme",
       "governanceTitle": "Yönetim",
-      "governanceDescription": "Bir FOX sahibi olarak ShapeShift'in geleceğinde söz sahibi olabilirsiniz. Aşağıda, belirteç sahipleri tarafından oylanan aktif veya yakın zamanda geçen DAO teklifleri bulunmaktadır.",
+      "governanceDescription": "Bir JINX sahibi olarak ShapeShift'in geleceğinde söz sahibi olabilirsiniz. Aşağıda, belirteç sahipleri tarafından oylanan aktif veya yakın zamanda geçen DAO teklifleri bulunmaktadır.",
       "seeAllProposals": "Tüm Teklifleri Gör",
       "availableToTradeOn": "Takas Edilebilir",
       "dex": "DEX",
       "centralized": "Merkezileştirilmiş",
       "dappBack": {
-        "title": "✨ FOX ödüllerini ve daha fazlasını alın! ✨",
-        "body": "DappBack'teki görevleri tamamlayarak FOX ödülleri kazanın",
+        "title": "✨ JINX ödüllerini ve daha fazlasını alın! ✨",
+        "body": "DappBack'teki görevleri tamamlayarak JINX ödülleri kazanın",
         "cta": "DappBack'i Başlatın"
       },
       "bondProtocol": {
-        "title": "FOX'u İndirimli Satın Alın!",
-        "body": "BondProtocol ile FOX'u indirimli satın alın",
+        "title": "JINX'u İndirimli Satın Alın!",
+        "body": "BondProtocol ile JINX'u indirimli satın alın",
         "cta": "BondProtocol'ü Başlat"
       }
     },
@@ -1885,28 +1885,28 @@
     },
     "lp": {
       "title": "%{asset1}/%{asset2} Sağlayıcılar",
-      "body": "Elinizde %{asset1} ve %{asset2} var mı? %{apy} APR kazanmak için Uniswap V2 Havuzuna likidite sağlayın. AYRICA, sahip olduğunuz FOX/ETH LP tokenlarındaki temel FOX, Arkeo airdrop için uygun olacaktır.",
+      "body": "Elinizde %{asset1} ve %{asset2} var mı? %{apy} APR kazanmak için Uniswap V2 Havuzuna likidite sağlayın. AYRICA, sahip olduğunuz JINX/ETH LP tokenlarındaki temel JINX, Arkeo airdrop için uygun olacaktır.",
       "cta": "Likidite Ekleyin"
     },
-    "foxTokenHolders": {
-      "title": "FOX Token Sahipleri",
-      "body": "Cüzdanda tutulan FOX token'ları. Çantanız ne kadar büyükse, Arkeo airdrop'unuz da o kadar büyük olur.",
-      "cta": "FOX Takas yap",
-      "secondary": "FOX Satın Al"
+    "jinxTokenHolders": {
+      "title": "JINX Token Sahipleri",
+      "body": "Cüzdanda tutulan JINX token'ları. Çantanız ne kadar büyükse, Arkeo airdrop'unuz da o kadar büyük olur.",
+      "cta": "JINX Takas yap",
+      "secondary": "JINX Satın Al"
     },
-    "foxFarmers": {
-      "title": "FOX/ETH LP Çiftçiler",
-      "body": "FOX Farm'da ETH/FOX LP jetonlarınızı staking yaparak %{apy} APR'ye kadar kazanın. AYRICA FOX Farm'ın 5. Turunda yatırdığınız ETH/FOX LP tokenlerinin temelinde yatan FOX, Arkeo airdrop'u için hak kazanacaktır.",
-      "cta": "FOX/ETH LP Stake Et"
+    "jinxFarmers": {
+      "title": "JINX/ETH LP Çiftçiler",
+      "body": "JINX Farm'da ETH/JINX LP jetonlarınızı staking yaparak %{apy} APR'ye kadar kazanın. AYRICA JINX Farm'ın 5. Turunda yatırdığınız ETH/JINX LP tokenlerinin temelinde yatan JINX, Arkeo airdrop'u için hak kazanacaktır.",
+      "cta": "JINX/ETH LP Stake Et"
     },
-    "foxyTokenHolders": {
-      "title": "FOXy Token Sahipleri",
-      "body": "FOX Yieldy (FOXy) ile boştaki FOX'unuzdan %{apy}'ye kadar APR kazanın. AYRICA Cüzdanınızda tutulan FOXy, FOX ile aynı muameleyi görecek ve Arkeo airdrop için uygun olacaktır.",
-      "cta": "FOX Token Stake Et"
+    "jinxyTokenHolders": {
+      "title": "JINXy Token Sahipleri",
+      "body": "JINX Yieldy (JINXy) ile boştaki JINX'unuzdan %{apy}'ye kadar APR kazanın. AYRICA Cüzdanınızda tutulan JINXy, JINX ile aynı muameleyi görecek ve Arkeo airdrop için uygun olacaktır.",
+      "cta": "JINX Token Stake Et"
     },
-    "foxEthProviders": {
-      "title": "FOX/ETH Uniswap V2 LP'ler",
-      "body": "%{asset1} ve %{asset2}'ye sahip misiniz? Uniswap V2 Havuzuna likidite sağlayarak %{apy} APR kazanın. AYRICA, sahip olduğunuz FOX/ETH LP tokenlarındaki temel FOX, Arkeo airdrop için uygun olacaktır.",
+    "jinxEthProviders": {
+      "title": "JINX/ETH Uniswap V2 LP'ler",
+      "body": "%{asset1} ve %{asset2}'ye sahip misiniz? Uniswap V2 Havuzuna likidite sağlayarak %{apy} APR kazanın. AYRICA, sahip olduğunuz JINX/ETH LP tokenlarındaki temel JINX, Arkeo airdrop için uygun olacaktır.",
       "cta": "Likidite Ekleyin"
     },
     "atomOsmoProviders": {
@@ -1933,7 +1933,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "FOXatar'ını Özelleştir",
+    "customizeJinxatar": "JINXatar'ını Özelleştir",
     "setAsAvatar": "Avatar olarak ayarla",
     "floorPrice": "Taban Fiyat",
     "lastPrice": "Son fiyat",
@@ -1952,7 +1952,7 @@
     "emptyBody": "Endişelenmeyin, daha harika NFT'leri geri getirmek için bir arama grubu gönderdik. Bu arada, bu boşluğa bakıp varoluşun anlamını düşünmekten çekinmeyin."
   },
   "missions": {
-    "subtitle": "FOX Görevleri",
+    "subtitle": "JINX Görevleri",
     "missionEnded": "Görev Sona Erdi",
     "viewMission": "Görevleri Görüntüle",
     "comingSoon": "Yakında",
@@ -1970,14 +1970,14 @@
       "subtitle": "Optimism'i Keşfedin",
       "cta": "Göreve Başla"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Ücretsiz ve Özelleştirilebilir bir NFT edinin",
-      "subtitle": "FOXatar'ı Basın",
+      "subtitle": "JINXatar'ı Basın",
       "cta": "Göreve Başla"
     },
-    "foxArmy": {
-      "subtitle": "FOX Ordusuna Katılın",
-      "title": "20.000 FOX Havuzu",
+    "jinxArmy": {
+      "subtitle": "JINX Ordusuna Katılın",
+      "title": "20.000 JINX Havuzu",
       "cta": "Göreve Başla"
     },
     "yat": {

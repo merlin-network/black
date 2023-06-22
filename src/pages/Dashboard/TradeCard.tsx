@@ -1,6 +1,6 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react'
 import type { AssetId } from '@shapeshiftoss/caip'
-import { ethAssetId, foxAssetId } from '@shapeshiftoss/caip'
+import { ethAssetId, jinxAssetId } from '@shapeshiftoss/caip'
 import { KeplrHDWallet } from '@shapeshiftoss/hdwallet-keplr/dist/keplr'
 import { useEffect, useMemo } from 'react'
 import { useTranslate } from 'react-polyglot'
@@ -24,7 +24,7 @@ export type TradeCardProps = {
 } & CardProps
 
 export const TradeCard = ({
-  defaultBuyAssetId = foxAssetId,
+  defaultBuyAssetId = jinxAssetId,
   defaultSellAssetId = ethAssetId,
   ...cardProps
 }: TradeCardProps) => {

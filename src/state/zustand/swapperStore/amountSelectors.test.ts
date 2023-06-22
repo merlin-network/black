@@ -7,18 +7,18 @@ import { baseSwapperState } from 'state/zustand/swapperStore/testData'
 import type { SwapperState } from 'state/zustand/swapperStore/types'
 
 jest.mock('state/slices/selectors', () => {
-  const { ETH, FOX } = require('test/constants')
+  const { ETH, JINX } = require('test/constants')
   const currencyToUsdRate = 1
   return {
     ...jest.requireActual('state/slices/selectors'),
     selectCryptoMarketData: () => ({
       [ETH.assetId]: { price: '1767' },
-      [FOX.assetId]: { price: '0.033' },
+      [JINX.assetId]: { price: '0.033' },
     }),
     selectFiatToUsdRate: () => currencyToUsdRate.toString(),
     selectAssets: () => ({
       [ETH.assetId]: ETH,
-      [FOX.assetId]: FOX,
+      [JINX.assetId]: JINX,
     }),
   }
 })

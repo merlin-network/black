@@ -1,4 +1,4 @@
-import { ethAssetId, foxAssetId, optimismAssetId, thorchainAssetId } from '@shapeshiftoss/caip'
+import { ethAssetId, jinxAssetId, optimismAssetId, thorchainAssetId } from '@shapeshiftoss/caip'
 import type { AxiosStatic } from 'axios'
 import { DAO_TREASURY_ETHEREUM_MAINNET, DAO_TREASURY_OPTIMISM } from 'constants/treasury'
 
@@ -16,7 +16,7 @@ jest.mock('lib/swapper/swappers/ZrxSwapper/utils/zrxService', () => {
 describe('utils', () => {
   describe('getTreasuryAddressForReceiveAsset', () => {
     it('gets the treasury address for an ERC20 asset', () => {
-      const treasuryAddress = getTreasuryAddressForReceiveAsset(foxAssetId)
+      const treasuryAddress = getTreasuryAddressForReceiveAsset(jinxAssetId)
       expect(treasuryAddress).toStrictEqual(DAO_TREASURY_ETHEREUM_MAINNET)
     })
 

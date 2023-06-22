@@ -279,22 +279,22 @@
         "emptyWithdraws": "Pending unstaking requests will show here.",
         "availableDate": "available %{date}"
       },
-      "foxyOverview": {
-        "header": "Deposit FOX to get FOXy to earn",
-        "body": "FOXy is a rebasing token pegged to the price of FOX. Staked FOX is put to work across different DeFi protocols to earn the best yield possible.",
+      "jinxyOverview": {
+        "header": "Deposit JINX to get JINXy to earn",
+        "body": "JINXy is a rebasing token pegged to the price of JINX. Staked JINX is put to work across different DeFi protocols to earn the best yield possible.",
         "rewards": "The rewards you earn will accrue automatically.",
-        "cta": "Deposit FOX Now",
-        "foxyBalance": "FOXy Balance",
+        "cta": "Deposit JINX Now",
+        "jinxyBalance": "JINXy Balance",
         "withdrawals": "Withdrawals",
         "emptyWithdraws": "Pending or active withdrawals will show here.",
         "availableDate": "available %{date}"
       },
-      "foxFarmingOverview": {
-        "header": "Deposit ETH-FOX LP tokens to %{opportunity} to earn",
-        "body": "Approve and stake your liquidity tokens to earn bonus FOX rewards.",
+      "jinxFarmingOverview": {
+        "header": "Deposit ETH-JINX LP tokens to %{opportunity} to earn",
+        "body": "Approve and stake your liquidity tokens to earn bonus JINX rewards.",
         "rewards": "The rewards you earn will accrue automatically.",
-        "cta": "Deposit ETH-FOX LP tokens Now",
-        "foxFarmingBalance": "ETH-FOX LP tokens Balance",
+        "cta": "Deposit ETH-JINX LP tokens Now",
+        "jinxFarmingBalance": "ETH-JINX LP tokens Balance",
         "withdrawals": "Withdrawals",
         "emptyWithdraws": "Pending or active withdrawals will show here.",
         "availableDate": "available %{date}"
@@ -405,7 +405,7 @@
     "earnBalance": "Earn Balance",
     "rewardsBalance": "Rewards Balance",
     "earnBody": "Earn passive income by staking your assets or depositing them into a DeFi strategy.",
-    "clickHereToEarn": "Click here to earn %{apr} APR* by farming your ETH-FOX liquidity pool tokens",
+    "clickHereToEarn": "Click here to earn %{apr} APR* by farming your ETH-JINX liquidity pool tokens",
     "overview": "Overview",
     "myPositions": "My Positions",
     "myPositionsBody": "Your active positions will appear here.",
@@ -500,7 +500,7 @@
     "overview": "Overview",
     "transactions": "Transactions",
     "tradeHistory": "Trade History",
-    "foxToken": "FOX Opportunities",
+    "jinxToken": "JINX Opportunities",
     "dApps": "dApps",
     "featureFlags": "Feature Flags",
     "demoMode": "Demo Mode",
@@ -513,8 +513,8 @@
     "buyCrypto": "Buy/Sell Crypto",
     "buyCryptoShort": "Buy/Sell",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "FOX Missions",
-    "foxMissionsShort": "Missions"
+    "jinxMissions": "JINX Missions",
+    "jinxMissionsShort": "Missions"
   },
   "transactionRow": {
     "send": "Sent",
@@ -565,7 +565,7 @@
       "thor": {
         "transferOut": "Transfer out"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Stake",
         "unstake": "Unstake",
         "instantUnstake": "Instant Unstake",
@@ -1583,16 +1583,16 @@
     "transfers": "Transfers"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Buy %{assetSymbol} on Coinbase",
-      "totalFoxValue": "Total Fox Value",
-      "foxToken": "ShapeShift %{assetSymbol} Token",
-      "foxDescription": "Since 2019, our shapeshifting FOX Token has been offering users an ever-expanding world of utility and advantages. Today, our ERC-20 governance token not only enables you to influence the future of ShapeShift through your vote, you also have an ever-expanding universe of investing opportunities. Invest, track, and manage your FOX holdings here.",
+      "totalJinxValue": "Total Jinx Value",
+      "jinxToken": "ShapeShift %{assetSymbol} Token",
+      "jinxDescription": "Since 2019, our shapeshifting JINX Token has been offering users an ever-expanding world of utility and advantages. Today, our ERC-20 governance token not only enables you to influence the future of ShapeShift through your vote, you also have an ever-expanding universe of investing opportunities. Invest, track, and manage your JINX holdings here.",
       "getAsset": "Get %{assetSymbol}",
       "trade": "Trade",
       "receive": "Receive",
       "mainStakingTitle": "%{assetSymbol} Token Staking",
-      "mainStakingDescription": "Put your FOX to work in single-sided staking contracts to earn FOX rewards. (FOX can still be used in governance while staked, but is otherwise locked into the contract during staking.)",
+      "mainStakingDescription": "Put your JINX to work in single-sided staking contracts to earn JINX rewards. (JINX can still be used in governance while staked, but is otherwise locked into the contract during staking.)",
       "tvl": "TVL",
       "currentApy": "Current APY",
       "balance": "Balance",
@@ -1602,30 +1602,30 @@
       "tradingUnavailable": "%{assetSymbol} is not yet tradeable on ShapeShift. You can trade %{assetSymbol} on ElasticSwap.",
       "tradeOnElasticSwap": "Trade %{assetSymbol} on ElasticSwap",
       "otherOpportunitiesTitle": {
-        "FOX": "Other Opportunities",
-        "FOXy": "Opportunities"
+        "JINX": "Other Opportunities",
+        "JINXy": "Opportunities"
       },
       "otherOpportunitiesDescription": {
-        "FOX": "Explore the many opportunities for providing liquidity, farming for yield, lending and borrowing. Click the “Get Started” links below to visit the external sites of interest to learn more—and put your FOX to work for you.",
-        "FOXy": "Quickly and easily purchase FOXy, the industry’s first DAO rebasing token that offers both yield and profit rewards."
+        "JINX": "Explore the many opportunities for providing liquidity, farming for yield, lending and borrowing. Click the “Get Started” links below to visit the external sites of interest to learn more—and put your JINX to work for you.",
+        "JINXy": "Quickly and easily purchase JINXy, the industry’s first DAO rebasing token that offers both yield and profit rewards."
       },
       "liquidityPools": "Liquidity Pools",
       "farming": "Farming",
       "borrowingAndLending": "Borrowing & Lending",
       "governanceTitle": "Governance",
-      "governanceDescription": "As a FOX holder, you can have a voice in the future of ShapeShift. Below are active or recently passed DAO proposals voted on by token holders.",
+      "governanceDescription": "As a JINX holder, you can have a voice in the future of ShapeShift. Below are active or recently passed DAO proposals voted on by token holders.",
       "seeAllProposals": "See All Proposals",
       "availableToTradeOn": "Available to Trade On",
       "dex": "DEX",
       "centralized": "Centralized",
       "dappBack": {
-        "title": "✨ Get FOX rewards + more! ✨",
-        "body": "Earn FOX rewards by completing tasks on DappBack",
+        "title": "✨ Get JINX rewards + more! ✨",
+        "body": "Earn JINX rewards by completing tasks on DappBack",
         "cta": "Launch DappBack"
       },
       "bondProtocol": {
-        "title": "Buy FOX at a Discount!",
-        "body": "Buy FOX at a discount with BondProtocol",
+        "title": "Buy JINX at a Discount!",
+        "body": "Buy JINX at a discount with BondProtocol",
         "cta": "Launch BondProtocol"
       }
     },
@@ -1885,28 +1885,28 @@
     },
     "lp": {
       "title": "%{asset1}/%{asset2} Providers",
-      "body": "Got %{asset1} and %{asset2}? Provide liquidity to the Uniswap V2 Pool to earn %{apy} APR. PLUS the underlying FOX in the FOX/ETH LP tokens you hold will qualify for the Arkeo airdrop.",
+      "body": "Got %{asset1} and %{asset2}? Provide liquidity to the Uniswap V2 Pool to earn %{apy} APR. PLUS the underlying JINX in the JINX/ETH LP tokens you hold will qualify for the Arkeo airdrop.",
       "cta": "Deposit Liquidity"
     },
-    "foxTokenHolders": {
-      "title": "FOX Token Holders",
-      "body": "Hodling FOX tokens. The larger your bag, the larger your Arkeo airdrop.",
-      "cta": "Trade for FOX",
-      "secondary": "Buy FOX"
+    "jinxTokenHolders": {
+      "title": "JINX Token Holders",
+      "body": "Hodling JINX tokens. The larger your bag, the larger your Arkeo airdrop.",
+      "cta": "Trade for JINX",
+      "secondary": "Buy JINX"
     },
-    "foxFarmers": {
-      "title": "FOX/ETH LP Farmers",
-      "body": "Earn up to %{apy} APR for staking your ETH/FOX LP tokens in the FOX Farm. PLUS the underlying FOX in the ETH/FOX LP tokens you stake in Round 5 of the FOX Farm will qualify for the Arkeo airdrop.",
-      "cta": "Stake FOX/ETH LP"
+    "jinxFarmers": {
+      "title": "JINX/ETH LP Farmers",
+      "body": "Earn up to %{apy} APR for staking your ETH/JINX LP tokens in the JINX Farm. PLUS the underlying JINX in the ETH/JINX LP tokens you stake in Round 5 of the JINX Farm will qualify for the Arkeo airdrop.",
+      "cta": "Stake JINX/ETH LP"
     },
-    "foxyTokenHolders": {
-      "title": "FOXy Token Holders",
-      "body": "Earn up to %{apy} APR on your idle FOX with FOX Yieldy (FOXy). PLUS FOXy held in your wallet will be treated the same as FOX and will qualify for the Arkeo airdrop.",
-      "cta": "Stake FOX Tokens"
+    "jinxyTokenHolders": {
+      "title": "JINXy Token Holders",
+      "body": "Earn up to %{apy} APR on your idle JINX with JINX Yieldy (JINXy). PLUS JINXy held in your wallet will be treated the same as JINX and will qualify for the Arkeo airdrop.",
+      "cta": "Stake JINX Tokens"
     },
-    "foxEthProviders": {
-      "title": "FOX/ETH Uniswap V2 LPs",
-      "body": "Got %{asset1} and %{asset2}? Provide liquidity to the Uniswap V2 Pool to earn %{apy} APR. PLUS the underlying FOX in the FOX/ETH LP tokens you hold will qualify for the Arkeo airdrop.",
+    "jinxEthProviders": {
+      "title": "JINX/ETH Uniswap V2 LPs",
+      "body": "Got %{asset1} and %{asset2}? Provide liquidity to the Uniswap V2 Pool to earn %{apy} APR. PLUS the underlying JINX in the JINX/ETH LP tokens you hold will qualify for the Arkeo airdrop.",
       "cta": "Deposit Liquidity"
     },
     "atomOsmoProviders": {
@@ -1933,7 +1933,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "Customize FOXatar",
+    "customizeJinxatar": "Customize JINXatar",
     "setAsAvatar": "Set as Avatar",
     "floorPrice": "Floor Price",
     "lastPrice": "Last Price",
@@ -1952,7 +1952,7 @@
     "emptyBody": "Don't worry, we've sent out a search party to bring back more amazing NFTs. In the meantime, feel free to stare at this blank space and ponder the meaning of existence."
   },
   "missions": {
-    "subtitle": "FOX Missions",
+    "subtitle": "JINX Missions",
     "missionEnded": "Mission Ended",
     "viewMission": "View Mission",
     "comingSoon": "Coming Soon",
@@ -1970,14 +1970,14 @@
       "subtitle": "Explore Optimism",
       "cta": "Start Mission"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Get a Free & Customizable NFT",
-      "subtitle": "Mint a FOXatar",
+      "subtitle": "Mint a JINXatar",
       "cta": "Start Mission"
     },
-    "foxArmy": {
-      "subtitle": "Join the FOX Army",
-      "title": "20,000 FOX Pool",
+    "jinxArmy": {
+      "subtitle": "Join the JINX Army",
+      "title": "20,000 JINX Pool",
       "cta": "Start Mission"
     },
     "yat": {

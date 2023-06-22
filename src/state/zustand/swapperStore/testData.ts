@@ -1,5 +1,5 @@
 import type { ChainId } from '@shapeshiftoss/caip'
-import { ETH, FOX } from 'test/constants'
+import { ETH, JINX } from 'test/constants'
 import { TradeAmountInputField } from 'components/Trade/types'
 import type { Swapper } from 'lib/swapper/api'
 import { SwapperName } from 'lib/swapper/api'
@@ -63,7 +63,7 @@ export const baseSwapperState: SwapperState = {
                 proportion: '1',
               },
             ],
-            buyAsset: FOX,
+            buyAsset: JINX,
             sellAsset: ETH,
             accountNumber: 0,
           },
@@ -90,16 +90,16 @@ export const baseSwapperState: SwapperState = {
                 proportion: '1',
               },
             ],
-            buyAsset: FOX,
+            buyAsset: JINX,
             sellAsset: ETH,
             accountNumber: 0,
             feeData: {
               networkFeeCryptoBaseUnit: '1800000000000000',
               protocolFees: {
-                [FOX.assetId]: {
+                [JINX.assetId]: {
                   amountCryptoBaseUnit: '258170392472859992504',
                   requiresBalance: false,
-                  asset: FOX,
+                  asset: JINX,
                 },
               },
             },
@@ -109,7 +109,7 @@ export const baseSwapperState: SwapperState = {
       inputOutputRatio: 0.6773207214158627,
     },
   ],
-  buyAsset: FOX,
+  buyAsset: JINX,
   sellAsset: ETH,
   receiveAddress: '0x32DBc9Cf9E8FbCebE1e0a2ecF05Ed86Ca3096Cb6',
   selectedSellAssetAccountId: 'eip155:1:0x32dbc9cf9e8fbcebe1e0a2ecf05ed86ca3096cb6',
@@ -120,10 +120,10 @@ export const baseSwapperState: SwapperState = {
     },
     tradeFeeSource: SwapperName.Thorchain,
     protocolFees: {
-      [FOX.assetId]: {
+      [JINX.assetId]: {
         amountCryptoBaseUnit: '258170392472859992504',
         requiresBalance: false,
-        asset: FOX,
+        asset: JINX,
       },
     },
     networkFeeCryptoHuman: '0.0018',

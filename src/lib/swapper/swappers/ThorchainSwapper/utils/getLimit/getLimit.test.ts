@@ -2,7 +2,7 @@ import { Ok } from '@sniptt/monads'
 import { mockChainAdapters } from 'test/mocks/portfolio'
 
 import { DEFAULT_SLIPPAGE } from '../../../utils/constants'
-import { BTC, ETH, FOX_MAINNET, RUNE } from '../../../utils/test-data/assets'
+import { BTC, ETH, JINX_MAINNET, RUNE } from '../../../utils/test-data/assets'
 import { getInboundAddressDataForChain } from '../getInboundAddressDataForChain'
 import { getTradeRate, getTradeRateBelowMinimum } from '../getTradeRate/getTradeRate'
 import { mockInboundAddresses } from '../test-data/responses'
@@ -65,7 +65,7 @@ describe('getLimit', () => {
       Promise.resolve(mockOk(mockInboundAddresses.find(address => address.chain === 'ETH'))),
     )
     const getLimitArgs: GetLimitArgs = {
-      sellAsset: FOX_MAINNET,
+      sellAsset: JINX_MAINNET,
       buyAsset: BTC,
       receiveAddress: '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa',
       sellAmountCryptoBaseUnit: '489830019000000000000',
@@ -97,7 +97,7 @@ describe('getLimit', () => {
       Promise.resolve(mockOk(mockInboundAddresses.find(address => address.chain === 'ETH'))),
     )
     const getLimitArgs: GetLimitArgs = {
-      sellAsset: FOX_MAINNET,
+      sellAsset: JINX_MAINNET,
       buyAsset: RUNE,
       receiveAddress: 'thor1234j5yq9qg7xqf0yq9qg7xqf0yq9qg7xqf0yq9q',
       sellAmountCryptoBaseUnit: '984229076000000000000',
@@ -130,19 +130,19 @@ describe('getLimit', () => {
     )
     const getLimitArgs: GetLimitArgs = {
       sellAsset: RUNE,
-      buyAsset: FOX_MAINNET,
+      buyAsset: JINX_MAINNET,
       receiveAddress: '0xFooBar',
       sellAmountCryptoBaseUnit: '988381400',
       slippageTolerance: DEFAULT_SLIPPAGE,
       protocolFees: {
-        [FOX_MAINNET.assetId]: {
+        [JINX_MAINNET.assetId]: {
           amountCryptoBaseUnit: '65000000000',
           requiresBalance: false,
-          asset: FOX_MAINNET,
+          asset: JINX_MAINNET,
         },
       },
       affiliateBps: '0',
-      buyAssetUsdRate: '0.04', // buyAssetUsdRate (FOX)
+      buyAssetUsdRate: '0.04', // buyAssetUsdRate (JINX)
       feeAssetUsdRate: '14.51', // sellFeeAssetUsdRate (RUNE)
     }
     const maybeLimit = await getLimit(getLimitArgs)

@@ -36,7 +36,7 @@ export type FeatureFlags = {
   ZrxSwap: boolean
   Mixpanel: boolean
   LifiSwap: boolean
-  FoxBondCTA: boolean
+  JinxBondCTA: boolean
   DynamicLpAssets: boolean
   ReadOnlyAssets: boolean
   Jaypegz: boolean
@@ -95,7 +95,7 @@ const initialState: Preferences = {
     LifiSwap: getConfig().REACT_APP_FEATURE_LIFI_SWAP,
     CovalentJaypegs: getConfig().REACT_APP_FEATURE_COVALENT_JAYPEGS,
     Mixpanel: getConfig().REACT_APP_FEATURE_MIXPANEL,
-    FoxBondCTA: getConfig().REACT_APP_FEATURE_FOX_BOND_CTA,
+    JinxBondCTA: getConfig().REACT_APP_FEATURE_JINX_BOND_CTA,
     DynamicLpAssets: getConfig().REACT_APP_FEATURE_DYNAMIC_LP_ASSETS,
     ReadOnlyAssets: getConfig().REACT_APP_FEATURE_READ_ONLY_ASSETS,
     OneInch: getConfig().REACT_APP_FEATURE_ONE_INCH,

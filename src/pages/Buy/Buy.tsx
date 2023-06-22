@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { useTranslate } from 'react-polyglot'
 import { useParams } from 'react-router'
 import AuroraBg from 'assets/aurorabg.jpg'
-import FoxPane from 'assets/fox-cta-pane.png'
+import JinxPane from 'assets/jinx-cta-pane.png'
 import { Card } from 'components/Card/Card'
 import { Main } from 'components/Layout/Main'
 import { SEO } from 'components/Layout/Seo'
@@ -127,7 +127,7 @@ export const Buy = () => {
               </Stack>
               <Box
                 width='300px'
-                bgImage={FoxPane}
+                bgImage={JinxPane}
                 backgroundSize='cover'
                 display={{ base: 'none', xl: 'block' }}
               />
