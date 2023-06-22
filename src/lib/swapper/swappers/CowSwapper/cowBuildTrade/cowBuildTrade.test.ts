@@ -7,7 +7,7 @@ import * as selectors from 'state/zustand/swapperStore/amountSelectors'
 
 import type { BuildTradeInput } from '../../../api'
 import { SwapperName } from '../../../api'
-import { ETH, FOX_MAINNET, USDC_GNOSIS, WBTC, WETH, XDAI } from '../../utils/test-data/assets'
+import { ETH, JINX_MAINNET, USDC_GNOSIS, WBTC, WETH, XDAI } from '../../utils/test-data/assets'
 import type { CowSwapQuoteResponse } from '../CowSwapper'
 import type { CowChainId, CowTrade } from '../types'
 import {
@@ -19,7 +19,7 @@ import { cowService } from '../utils/cowService'
 import type { CowSwapSellQuoteApiInput } from '../utils/helpers/helpers'
 import { cowBuildTrade } from './cowBuildTrade'
 
-const foxRate = '0.0873'
+const jinxRate = '0.0873'
 const ethRate = '1233.65940923824103061992'
 const wethRate = '1233.65940923824103061992'
 const wbtcRate = '20978.38'
@@ -52,7 +52,7 @@ const selectSellAssetUsdRateSpy = jest.spyOn(selectors, 'selectSellAssetUsdRate'
 
 const supportedChainIds: CowChainId[] = [KnownChainIds.EthereumMainnet, KnownChainIds.GnosisMainnet]
 
-const expectedApiInputWethToFox: CowSwapSellQuoteApiInput = {
+const expectedApiInputWethToJinx: CowSwapSellQuoteApiInput = {
   appData: DEFAULT_APP_DATA,
   buyToken: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
   from: DEFAULT_ADDRESS,
@@ -76,7 +76,7 @@ const expectedApiInputWbtcToWeth: CowSwapSellQuoteApiInput = {
   validTo: 1656797787,
 }
 
-const expectedApiInputFoxToEth: CowSwapSellQuoteApiInput = {
+const expectedApiInputJinxToEth: CowSwapSellQuoteApiInput = {
   appData: DEFAULT_APP_DATA,
   buyToken: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
   from: DEFAULT_ADDRESS,
@@ -100,8 +100,8 @@ const expectedApiInputUsdcGnosisToXdai: CowSwapSellQuoteApiInput = {
   validTo: 1656797787,
 }
 
-const expectedTradeWethToFox: CowTrade<KnownChainIds.EthereumMainnet> = {
-  rate: '14716.04718939437505555958', // 14716 FOX per WETH
+const expectedTradeWethToJinx: CowTrade<KnownChainIds.EthereumMainnet> = {
+  rate: '14716.04718939437505555958', // 14716 JINX per WETH
   feeData: {
     networkFeeCryptoBaseUnit: '0',
     protocolFees: {
@@ -113,9 +113,9 @@ const expectedTradeWethToFox: CowTrade<KnownChainIds.EthereumMainnet> = {
     },
   },
   sellAmountBeforeFeesCryptoBaseUnit: '1000000000000000000',
-  buyAmountBeforeFeesCryptoBaseUnit: '14707533959600717283163', // 14707 FOX
+  buyAmountBeforeFeesCryptoBaseUnit: '14707533959600717283163', // 14707 JINX
   sources: [{ name: SwapperName.CowSwap, proportion: '1' }],
-  buyAsset: FOX_MAINNET,
+  buyAsset: JINX_MAINNET,
   sellAsset: WETH,
   accountNumber: 0,
   receiveAddress: DEFAULT_ADDRESS,
@@ -151,15 +151,15 @@ const expectedTradeQuoteWbtcToWethWithApprovalFeeCryptoBaseUnit: CowTrade<KnownC
     minimumBuyAmountAfterFeesCryptoBaseUnit: '19100752114872442703',
   }
 
-const expectedTradeQuoteFoxToEth: CowTrade<KnownChainIds.EthereumMainnet> = {
+const expectedTradeQuoteJinxToEth: CowTrade<KnownChainIds.EthereumMainnet> = {
   rate: '0.00005461814085319106',
   feeData: {
     networkFeeCryptoBaseUnit: '0',
     protocolFees: {
-      [FOX_MAINNET.assetId]: {
+      [JINX_MAINNET.assetId]: {
         amountCryptoBaseUnit: '61804771879693983744',
         requiresBalance: false,
-        asset: FOX_MAINNET,
+        asset: JINX_MAINNET,
       },
     },
   },
@@ -167,7 +167,7 @@ const expectedTradeQuoteFoxToEth: CowTrade<KnownChainIds.EthereumMainnet> = {
   buyAmountBeforeFeesCryptoBaseUnit: '55616098403669903',
   sources: [{ name: SwapperName.CowSwap, proportion: '1' }],
   buyAsset: ETH,
-  sellAsset: FOX_MAINNET,
+  sellAsset: JINX_MAINNET,
   accountNumber: 0,
   receiveAddress: DEFAULT_ADDRESS,
   feeAmountInSellTokenCryptoBaseUnit: '61804771879693983744',
@@ -203,13 +203,13 @@ const expectedTradeQuoteUsdcToXdai: CowTrade<KnownChainIds.GnosisMainnet> = {
 
 describe('cowBuildTrade', () => {
   it('should throw an exception if both assets are not erc20s', async () => {
-    selectBuyAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectBuyAssetUsdRateSpy.mockImplementation(() => jinxRate)
     selectSellAssetUsdRateSpy.mockImplementation(() => ethRate)
 
     const tradeInput: BuildTradeInput = {
       chainId: KnownChainIds.EthereumMainnet,
       sellAsset: ETH,
-      buyAsset: FOX_MAINNET,
+      buyAsset: JINX_MAINNET,
       sellAmountBeforeFeesCryptoBaseUnit: '11111',
       accountNumber: 0,
       wallet: {} as HDWallet,
@@ -232,13 +232,13 @@ describe('cowBuildTrade', () => {
   })
 
   it('should call cowService with correct parameters, handle the fees and return the correct trade when selling WETH', async () => {
-    selectBuyAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectBuyAssetUsdRateSpy.mockImplementation(() => jinxRate)
     selectSellAssetUsdRateSpy.mockImplementation(() => wethRate)
 
     const tradeInput: BuildTradeInput = {
       chainId: KnownChainIds.EthereumMainnet,
       sellAsset: WETH,
-      buyAsset: FOX_MAINNET,
+      buyAsset: JINX_MAINNET,
       sellAmountBeforeFeesCryptoBaseUnit: '1000000000000000000',
       accountNumber: 0,
       wallet: {} as HDWallet,
@@ -254,7 +254,7 @@ describe('cowBuildTrade', () => {
         Ok<{ data: CowSwapQuoteResponse }>({
           data: {
             quote: {
-              ...expectedApiInputWethToFox,
+              ...expectedApiInputWethToJinx,
               sellAmount: '985442057341242012',
               buyAmount: '14501811818247595090576',
               feeAmount: '14557942658757988',
@@ -270,10 +270,10 @@ describe('cowBuildTrade', () => {
     const maybeBuiltTrade = await cowBuildTrade(tradeInput, supportedChainIds)
 
     expect(maybeBuiltTrade.isOk()).toBe(true)
-    expect(maybeBuiltTrade.unwrap()).toEqual(expectedTradeWethToFox)
+    expect(maybeBuiltTrade.unwrap()).toEqual(expectedTradeWethToJinx)
     expect(cowService.post).toHaveBeenCalledWith(
       'https://api.cow.fi/mainnet/api/v1/quote/',
-      expectedApiInputWethToFox,
+      expectedApiInputWethToJinx,
     )
   })
 
@@ -327,11 +327,11 @@ describe('cowBuildTrade', () => {
 
   it('should call cowService with correct parameters, handle the fees and return the correct trade when buying ETH', async () => {
     selectBuyAssetUsdRateSpy.mockImplementation(() => ethRate)
-    selectSellAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectSellAssetUsdRateSpy.mockImplementation(() => jinxRate)
 
     const tradeInput: BuildTradeInput = {
       chainId: KnownChainIds.EthereumMainnet,
-      sellAsset: FOX_MAINNET,
+      sellAsset: JINX_MAINNET,
       buyAsset: ETH,
       sellAmountBeforeFeesCryptoBaseUnit: '1000000000000000000000',
       accountNumber: 0,
@@ -347,7 +347,7 @@ describe('cowBuildTrade', () => {
         Ok<{ data: CowSwapQuoteResponse }>({
           data: {
             quote: {
-              ...expectedApiInputFoxToEth,
+              ...expectedApiInputJinxToEth,
               sellAmount: '938195228120306016256',
               buyAmount: '51242479117266593',
               feeAmount: '61804771879693983744',
@@ -363,10 +363,10 @@ describe('cowBuildTrade', () => {
     const maybeBuiltTrade = await cowBuildTrade(tradeInput, supportedChainIds)
     expect(maybeBuiltTrade.isOk()).toBe(true)
 
-    expect(maybeBuiltTrade.unwrap()).toEqual(expectedTradeQuoteFoxToEth)
+    expect(maybeBuiltTrade.unwrap()).toEqual(expectedTradeQuoteJinxToEth)
     expect(cowService.post).toHaveBeenCalledWith(
       'https://api.cow.fi/mainnet/api/v1/quote/',
-      expectedApiInputFoxToEth,
+      expectedApiInputJinxToEth,
     )
   })
 

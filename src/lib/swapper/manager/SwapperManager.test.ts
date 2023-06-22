@@ -3,8 +3,8 @@ import {
   BSC,
   BTC,
   ETH,
-  FOX_GNOSIS,
-  FOX_MAINNET,
+  JINX_GNOSIS,
+  JINX_MAINNET,
   WETH,
 } from 'lib/swapper/swappers/utils/test-data/assets'
 
@@ -65,27 +65,27 @@ describe('SwapperManager', () => {
 
   describe('getSupportedBuyAssetIdsFromSellId', () => {
     it('should return an array of supported buy assetIds given a sell asset Id', () => {
-      const assetIds = [BTC.assetId, WETH.assetId, FOX_MAINNET.assetId]
+      const assetIds = [BTC.assetId, WETH.assetId, JINX_MAINNET.assetId]
 
-      const sellAssetId = FOX_MAINNET.assetId
+      const sellAssetId = JINX_MAINNET.assetId
       const swapperManager = new SwapperManager()
       swapperManager.addSwapper(zrxSwapper)
 
       expect(
         swapperManager.getSupportedBuyAssetIdsFromSellId({ sellAssetId, assetIds }),
-      ).toStrictEqual([WETH.assetId, FOX_MAINNET.assetId])
+      ).toStrictEqual([WETH.assetId, JINX_MAINNET.assetId])
     })
 
     it('should return unique assetIds', () => {
-      const assetIds = [BTC.assetId, WETH.assetId, WETH.assetId, FOX_MAINNET.assetId]
+      const assetIds = [BTC.assetId, WETH.assetId, WETH.assetId, JINX_MAINNET.assetId]
 
-      const sellAssetId = FOX_MAINNET.assetId
+      const sellAssetId = JINX_MAINNET.assetId
       const swapperManager = new SwapperManager()
       swapperManager.addSwapper(zrxSwapper)
 
       expect(
         swapperManager.getSupportedBuyAssetIdsFromSellId({ sellAssetId, assetIds }),
-      ).toStrictEqual([WETH.assetId, FOX_MAINNET.assetId])
+      ).toStrictEqual([WETH.assetId, JINX_MAINNET.assetId])
     })
   })
 
@@ -100,14 +100,14 @@ describe('SwapperManager', () => {
     })
 
     it('should return unique assetIds', () => {
-      const assetIds = [BTC.assetId, WETH.assetId, FOX_MAINNET.assetId, FOX_GNOSIS.assetId]
+      const assetIds = [BTC.assetId, WETH.assetId, JINX_MAINNET.assetId, JINX_GNOSIS.assetId]
 
       const swapperManager = new SwapperManager()
       swapperManager.addSwapper(zrxSwapper)
 
       expect(swapperManager.getSupportedSellableAssetIds({ assetIds })).toStrictEqual([
         WETH.assetId,
-        FOX_MAINNET.assetId,
+        JINX_MAINNET.assetId,
       ])
     })
   })

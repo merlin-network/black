@@ -1,5 +1,5 @@
 import { Container, Stack } from '@chakra-ui/react'
-import foxPageBg from 'assets/foxpage-bg.png'
+import jinxPageBg from 'assets/jinxpage-bg.png'
 import { Main } from 'components/Layout/Main'
 import { MultiHopTrade } from 'components/MultiHopTrade/MultiHopTrade'
 import { RecentTransactions } from 'pages/Dashboard/RecentTransactions'
@@ -18,7 +18,7 @@ export const Trade = () => {
       flex={1}
       width='full'
       hideBreadcrumbs
-      bgImage={foxPageBg}
+      bgImage={jinxPageBg}
       backgroundSize='contain'
       backgroundPosition='top center'
       backgroundRepeat='no-repeat'

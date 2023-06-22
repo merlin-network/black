@@ -25,7 +25,7 @@ import { FaGasPump, FaWrench } from 'react-icons/fa'
 import { useTranslate } from 'react-polyglot'
 import { Card } from 'components/Card/Card'
 import { CircularProgress } from 'components/CircularProgress/CircularProgress'
-import { FoxIcon } from 'components/Icons/FoxIcon'
+import { JinxIcon } from 'components/Icons/JinxIcon'
 import { Text } from 'components/Text'
 import { useWallet } from 'hooks/useWallet/useWallet'
 
@@ -42,7 +42,7 @@ export const EIP155TransactionConfirmation: FC<
   const {
     state: { walletInfo },
   } = useWallet()
-  const WalletIcon = walletInfo?.icon ?? FoxIcon
+  const WalletIcon = walletInfo?.icon ?? JinxIcon
 
   const form = useForm<CustomTransactionData>({
     defaultValues: {

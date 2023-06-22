@@ -5,7 +5,7 @@ import { ModalSection } from 'plugins/walletConnectToDapps/components/modals/Mod
 import { useWalletConnect } from 'plugins/walletConnectToDapps/v1/WalletConnectBridgeContext'
 import { useTranslate } from 'react-polyglot'
 import { Card } from 'components/Card/Card'
-import { FoxIcon } from 'components/Icons/FoxIcon'
+import { JinxIcon } from 'components/Icons/JinxIcon'
 import { RawText, Text } from 'components/Text'
 import { useWallet } from 'hooks/useWallet/useWallet'
 
@@ -19,7 +19,7 @@ export const SignMessageConfirmation: React.FC<SignMessageConfirmationProps> = p
   const { message, onConfirm, onReject } = props
   const translate = useTranslate()
   const walletInfo = useWallet().state.walletInfo
-  const WalletIcon = walletInfo?.icon ?? FoxIcon
+  const WalletIcon = walletInfo?.icon ?? JinxIcon
   const cardBg = useColorModeValue('white', 'gray.850')
   const walletConnect = useWalletConnect()
 

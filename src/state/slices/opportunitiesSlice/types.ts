@@ -3,7 +3,7 @@ import type { PartialRecord } from 'lib/utils'
 import type { Nominal } from 'types/common'
 
 import type { CosmosSdkStakingSpecificUserStakingOpportunity } from './resolvers/cosmosSdk/types'
-import type { FoxySpecificUserStakingOpportunity } from './resolvers/foxy/types'
+import type { JinxySpecificUserStakingOpportunity } from './resolvers/jinxy/types'
 import type { IdleStakingSpecificMetadata } from './resolvers/idle/types'
 import type { ThorchainSaversStakingSpecificMetadata } from './resolvers/thorchainsavers/types'
 
@@ -15,7 +15,7 @@ export enum DefiType {
 export enum DefiProvider {
   Idle = 'Idle',
   ShapeShift = 'ShapeShift',
-  EthFoxStaking = 'ETH/FOX Staking',
+  EthJinxStaking = 'ETH/JINX Staking',
   UniV2 = 'Uniswap V2',
   CosmosSdk = 'Cosmos SDK',
   OsmosisLp = 'Osmosis LP',
@@ -100,7 +100,7 @@ export type UserStakingOpportunityBase = {
 export type UserStakingOpportunity =
   | UserStakingOpportunityBase
   | CosmosSdkStakingSpecificUserStakingOpportunity
-  | FoxySpecificUserStakingOpportunity
+  | JinxySpecificUserStakingOpportunity
 
 export type UserStakingOpportunityWithMetadata = UserStakingOpportunity & OpportunityMetadata
 
@@ -202,7 +202,7 @@ type EarnDefiTypeBase = {
   icons?: string[]
   // overrides any name down the road
   opportunityName: string
-  highestBalanceAccountAddress?: string // FOX/ETH specific, let's change it to accountId across the line if we need it for other opportunities
+  highestBalanceAccountAddress?: string // JINX/ETH specific, let's change it to accountId across the line if we need it for other opportunities
 }
 
 export type StakingEarnOpportunityType = OpportunityMetadata &

@@ -1,7 +1,7 @@
 import { Ok } from '@sniptt/monads'
 import type { AxiosStatic } from 'axios'
 
-import { BTC, ETH, FOX_MAINNET, UNSUPPORTED } from '../../../utils/test-data/assets'
+import { BTC, ETH, JINX_MAINNET, UNSUPPORTED } from '../../../utils/test-data/assets'
 import { thorService } from '../thorService'
 import { getTradeRate } from './getTradeRate'
 jest.mock('../thorService', () => {
@@ -14,7 +14,7 @@ jest.mock('../thorService', () => {
 })
 
 describe('getTradeRate', () => {
-  it('should calculate a correct rate for trading ETH to FOX', async () => {
+  it('should calculate a correct rate for trading ETH to JINX', async () => {
     ;(thorService.get as jest.Mock<unknown>).mockReturnValue(
       Promise.resolve(
         Ok({
@@ -44,7 +44,7 @@ describe('getTradeRate', () => {
 
     const maybeTradeRate = await getTradeRate({
       sellAsset: ETH,
-      buyAssetId: FOX_MAINNET.assetId,
+      buyAssetId: JINX_MAINNET.assetId,
       sellAmountCryptoBaseUnit: '1000000000000000000000000',
       receiveAddress,
       affiliateBps: '0',
@@ -54,7 +54,7 @@ describe('getTradeRate', () => {
     expect(maybeTradeRate.unwrap()).toEqual(expectedRate)
   })
 
-  it('should calculate a correct rate for trading FOX to ETH', async () => {
+  it('should calculate a correct rate for trading JINX to ETH', async () => {
     ;(thorService.get as jest.Mock<unknown>).mockReturnValue(
       Promise.resolve(
         Ok({
@@ -82,7 +82,7 @@ describe('getTradeRate', () => {
     const receiveAddress = '0xFooBar'
 
     const maybeTradeRate = await getTradeRate({
-      sellAsset: FOX_MAINNET,
+      sellAsset: JINX_MAINNET,
       buyAssetId: ETH.assetId,
       sellAmountCryptoBaseUnit: '100000000000',
       receiveAddress,
@@ -93,7 +93,7 @@ describe('getTradeRate', () => {
     expect(maybeTradeRate.unwrap()).toEqual(expectedRate)
   })
 
-  it('should calculate a correct rate for trading FOX to BTC', async () => {
+  it('should calculate a correct rate for trading JINX to BTC', async () => {
     ;(thorService.get as jest.Mock<unknown>).mockReturnValue(
       Promise.resolve(
         Ok({
@@ -121,7 +121,7 @@ describe('getTradeRate', () => {
     const receiveAddress = '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa'
 
     const maybeTradeRate = await getTradeRate({
-      sellAsset: FOX_MAINNET,
+      sellAsset: JINX_MAINNET,
       buyAssetId: BTC.assetId,
       sellAmountCryptoBaseUnit: '100000000000',
       receiveAddress,
@@ -132,7 +132,7 @@ describe('getTradeRate', () => {
     expect(maybeTradeRate.unwrap()).toEqual(expectedRate)
   })
 
-  it('should calculate a correct rate for trading BTC to FOX', async () => {
+  it('should calculate a correct rate for trading BTC to JINX', async () => {
     ;(thorService.get as jest.Mock<unknown>).mockReturnValue(
       Promise.resolve(
         Ok({
@@ -142,7 +142,7 @@ describe('getTradeRate', () => {
             expiry: 1681132269,
             fees: {
               affiliate: '0',
-              asset: 'ETH.FOX-0XC770EEFAD204B5180DF6A14EE197D99D808EE52D',
+              asset: 'ETH.JINX-0XC770EEFAD204B5180DF6A14EE197D99D808EE52D',
               outbound: '16554235812',
             },
             inbound_address: 'bc1qucjrczghvwl5d66klz6npv7tshkpwpzlw0zzj8',
@@ -163,7 +163,7 @@ describe('getTradeRate', () => {
 
     const maybeRate = await getTradeRate({
       sellAsset: BTC,
-      buyAssetId: FOX_MAINNET.assetId,
+      buyAssetId: JINX_MAINNET.assetId,
       sellAmountCryptoBaseUnit: '1000000000',
       receiveAddress,
       affiliateBps: '0',
@@ -221,7 +221,7 @@ describe('getTradeRate', () => {
 
     const maybeTradeRate = await getTradeRate({
       sellAsset: ETH,
-      buyAssetId: FOX_MAINNET.assetId,
+      buyAssetId: JINX_MAINNET.assetId,
       sellAmountCryptoBaseUnit: '1000000000000000000000000',
       receiveAddress,
       affiliateBps: '100',

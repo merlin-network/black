@@ -1,7 +1,7 @@
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { createSlice } from '@reduxjs/toolkit'
 import type { AccountId } from '@shapeshiftoss/caip'
-import { ethAssetId, foxAssetId } from '@shapeshiftoss/caip'
+import { ethAssetId, jinxAssetId } from '@shapeshiftoss/caip'
 import type { Asset } from 'lib/asset-service'
 import { localAssetData } from 'lib/asset-service'
 import { bnOrZero } from 'lib/bignumber/bignumber'
@@ -19,7 +19,7 @@ export type SwappersState = {
 
 // Define the initial state:
 const initialState: SwappersState = {
-  buyAsset: localAssetData[foxAssetId] ?? defaultAsset,
+  buyAsset: localAssetData[jinxAssetId] ?? defaultAsset,
   sellAsset: localAssetData[ethAssetId] ?? defaultAsset,
   sellAssetAccountId: undefined,
   sellAmountCryptoPrecision: '0',

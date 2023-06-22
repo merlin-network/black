@@ -4,7 +4,7 @@ import { IoSwapVertical } from 'react-icons/io5'
 import { AssetsIcon } from 'components/Icons/Assets'
 import { DashboardIcon } from 'components/Icons/Dashboard'
 import { DefiIcon } from 'components/Icons/DeFi'
-import { FoxIcon } from 'components/Icons/FoxIcon'
+import { JinxIcon } from 'components/Icons/JinxIcon'
 import { TxHistoryIcon } from 'components/Icons/TxHistory'
 import { assetIdPaths } from 'hooks/useRouteAssetId/useRouteAssetId'
 import { Asset } from 'pages/Assets/Asset'
@@ -109,9 +109,9 @@ export const routes: NestedRoute[] = [
   },
   {
     path: '/missions',
-    label: 'navBar.foxMissions',
-    shortLabel: 'navBar.foxMissionsShort',
-    icon: <FoxIcon />,
+    label: 'navBar.jinxMissions',
+    shortLabel: 'navBar.jinxMissionsShort',
+    icon: <JinxIcon />,
     main: Missions,
     category: RouteCategory.Explore,
   },

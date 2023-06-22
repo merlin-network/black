@@ -236,19 +236,19 @@ export const TermsOfService = () => {
             in that individual's particular jurisdiction.
           </RawText>
           <RawText as='p'>
-            <RawText as='strong'>FOX Tokens:</RawText> ShapeShift AG, with whom we are not
+            <RawText as='strong'>JINX Tokens:</RawText> ShapeShift AG, with whom we are not
             affiliated, created a standard ERC-20 token on the Ethereum blockchain that can be
-            accessed through most wallets that support Ethereum called the FOX token (each a &quot;
-            <RawText as='strong'>FOX Token</RawText>&quot;). In spring 2021, ShapeShift AG
-            airdropped the majority of its FOX Tokens to prior users, members of various DAOs,
-            shareholders, employees, and to fund us as a DAO. FOX Tokens are used as governance
-            tokens for the Platform. Neither we nor ShapeShift AG have ever sold FOX Tokens. To
-            learn more about how FOX Token holders can participate in governance of the Platform,
+            accessed through most wallets that support Ethereum called the JINX token (each a &quot;
+            <RawText as='strong'>JINX Token</RawText>&quot;). In spring 2021, ShapeShift AG
+            airdropped the majority of its JINX Tokens to prior users, members of various DAOs,
+            shareholders, employees, and to fund us as a DAO. JINX Tokens are used as governance
+            tokens for the Platform. Neither we nor ShapeShift AG have ever sold JINX Tokens. To
+            learn more about how JINX Token holders can participate in governance of the Platform,
             please join or discord server{' '}
             <Link href='https://discord.com/invite/shapeshift'>
               <RawText as='strong'>here</RawText>
             </Link>{' '}
-            and see the channel titled &quot;governance&quot;. The smart contract for the FOX Tokens
+            and see the channel titled &quot;governance&quot;. The smart contract for the JINX Tokens
             can be found{' '}
             <Link href='https://etherscan.io/token/0xc770eefad204b5180df6a14ee197d99d808ee52d'>
               <RawText as='strong'>here</RawText>

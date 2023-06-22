@@ -1,4 +1,4 @@
-import { ethAssetId, foxAssetId } from '@shapeshiftoss/caip'
+import { ethAssetId, jinxAssetId } from '@shapeshiftoss/caip'
 import { createStore, useStore } from 'zustand'
 import { devtools } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
@@ -39,7 +39,7 @@ export const swapperStore = createStore<
         isSendMax: false,
         buyAmountCryptoPrecision: '0',
         sellAmountCryptoPrecision: '0',
-        buyAsset: localAssetData[foxAssetId] ?? defaultAsset,
+        buyAsset: localAssetData[jinxAssetId] ?? defaultAsset,
         sellAsset: localAssetData[ethAssetId] ?? defaultAsset,
         activeAffiliateBps: '0',
 

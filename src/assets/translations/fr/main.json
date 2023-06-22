@@ -279,22 +279,22 @@
         "emptyWithdraws": "Les demandes de démise en attente s'affichent ici.",
         "availableDate": "disponible %{date}"
       },
-      "foxyOverview": {
-        "header": "Déposer du FOX pour obtenir du FOXy afin de gagner",
-        "body": "FOXy est un jeton de rebasage indexé sur le prix de FOX. Les FOX misés sont mis à contribution sur différents protocoles DeFi pour obtenir le meilleur rendement possible.",
+      "jinxyOverview": {
+        "header": "Déposer du JINX pour obtenir du JINXy afin de gagner",
+        "body": "JINXy est un jeton de rebasage indexé sur le prix de JINX. Les JINX misés sont mis à contribution sur différents protocoles DeFi pour obtenir le meilleur rendement possible.",
         "rewards": "Les récompenses que vous gagnez s'accumuleront automatiquement.",
-        "cta": "Déposer des FOX maintenant",
-        "foxyBalance": "Solde FOXy",
+        "cta": "Déposer des JINX maintenant",
+        "jinxyBalance": "Solde JINXy",
         "withdrawals": "Retraits",
         "emptyWithdraws": "Les retraits en attente ou actifs s'afficheront ici.",
         "availableDate": "disponible %{date}"
       },
-      "foxFarmingOverview": {
-        "header": "Déposer des jetons LP ETH-FOX dans %{opportunity} pour gagner",
-        "body": "Autorisez et misez vos jetons de liquidité pour gagner des récompenses bonus en FOX.",
+      "jinxFarmingOverview": {
+        "header": "Déposer des jetons LP ETH-JINX dans %{opportunity} pour gagner",
+        "body": "Autorisez et misez vos jetons de liquidité pour gagner des récompenses bonus en JINX.",
         "rewards": "Les récompenses que vous gagnez s'accumuleront automatiquement.",
-        "cta": "Déposer des jetons LP ETH-FOX maintenant",
-        "foxFarmingBalance": "Solde de jetons LP ETH-FOX",
+        "cta": "Déposer des jetons LP ETH-JINX maintenant",
+        "jinxFarmingBalance": "Solde de jetons LP ETH-JINX",
         "withdrawals": "Retraits",
         "emptyWithdraws": "Les retraits en attente ou actifs s'afficheront ici.",
         "availableDate": "disponible %{date}"
@@ -405,7 +405,7 @@
     "earnBalance": "Solde dans Gagner",
     "rewardsBalance": "Solde des récompenses",
     "earnBody": "Gagnez des revenus passifs en misant vos actifs ou en les déposant dans une stratégie DeFi.",
-    "clickHereToEarn": "Cliquez ici pour gagner %{apr} d'APR* avec le farming de vos jetons de pool de liquidités ETH-FOX",
+    "clickHereToEarn": "Cliquez ici pour gagner %{apr} d'APR* avec le farming de vos jetons de pool de liquidités ETH-JINX",
     "overview": "Vue d'ensemble",
     "myPositions": "Mes positions",
     "myPositionsBody": "Vos positions actives apparaîtront ici.",
@@ -500,7 +500,7 @@
     "overview": "Vue d'ensemble",
     "transactions": "Transactions",
     "tradeHistory": "Historique des échanges",
-    "foxToken": "Opportunités FOX",
+    "jinxToken": "Opportunités JINX",
     "dApps": "dApps",
     "featureFlags": "Indicateurs de fonctionnalité",
     "demoMode": "Mode démo",
@@ -513,8 +513,8 @@
     "buyCrypto": "Acheter/Vendre des cryptos",
     "buyCryptoShort": "Achat/Vente",
     "arkeo": "Airdrop Arkeo",
-    "foxMissions": "Missions FOX",
-    "foxMissionsShort": "Missions"
+    "jinxMissions": "Missions JINX",
+    "jinxMissionsShort": "Missions"
   },
   "transactionRow": {
     "send": "Envoi",
@@ -565,7 +565,7 @@
       "thor": {
         "transferOut": "Transfert sortant"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Mise",
         "unstake": "Démise",
         "instantUnstake": "Démise instantanée",
@@ -1583,16 +1583,16 @@
     "transfers": "Transferts"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Acheter %{assetSymbol} sur Coinbase",
-      "totalFoxValue": "Valeur totale des FOX",
-      "foxToken": "Jeton %{assetSymbol} de ShapeShift",
-      "foxDescription": "Depuis 2019, notre jeton FOX offre aux utilisateurs un éventail toujours plus vaste d'utilités et d'avantages. Aujourd'hui, notre jeton de gouvernance ERC-20 vous permet non seulement d'influencer l'avenir de ShapeShift par votre vote, mais vous disposez également d'un univers toujours plus vaste d'opportunités d'investissement. Investissez, suivez et gérez vos avoirs FOX ici.",
+      "totalJinxValue": "Valeur totale des JINX",
+      "jinxToken": "Jeton %{assetSymbol} de ShapeShift",
+      "jinxDescription": "Depuis 2019, notre jeton JINX offre aux utilisateurs un éventail toujours plus vaste d'utilités et d'avantages. Aujourd'hui, notre jeton de gouvernance ERC-20 vous permet non seulement d'influencer l'avenir de ShapeShift par votre vote, mais vous disposez également d'un univers toujours plus vaste d'opportunités d'investissement. Investissez, suivez et gérez vos avoirs JINX ici.",
       "getAsset": "Obtenir du %{assetSymbol}",
       "trade": "Échanger",
       "receive": "Recevoir",
       "mainStakingTitle": "Mises de jetons %{assetSymbol}",
-      "mainStakingDescription": "Mettez votre FOX au travail dans des contrats de mise unilatéraux pour gagner des récompenses FOX. (vos FOX peuvent toujours être utilisés pour la gouvernance lorsqu'ils sont misés, mais ils sont autrement verrouillés dans le contrat durant la mise.)",
+      "mainStakingDescription": "Mettez votre JINX au travail dans des contrats de mise unilatéraux pour gagner des récompenses JINX. (vos JINX peuvent toujours être utilisés pour la gouvernance lorsqu'ils sont misés, mais ils sont autrement verrouillés dans le contrat durant la mise.)",
       "tvl": "TVL",
       "currentApy": "APY actuel",
       "balance": "Solde",
@@ -1602,30 +1602,30 @@
       "tradingUnavailable": "Les %{assetSymbol} ne sont pas encore échangeables sur ShapeShift. Vous pouvez échanger des %{assetSymbol} sur ElasticSwap.",
       "tradeOnElasticSwap": "Échanger des %{assetSymbol} sur ElasticSwap",
       "otherOpportunitiesTitle": {
-        "FOX": "Autres opportunités",
-        "FOXy": "Opportunités"
+        "JINX": "Autres opportunités",
+        "JINXy": "Opportunités"
       },
       "otherOpportunitiesDescription": {
-        "FOX": "Explorez les nombreuses possibilités pour fournir des liquidités, recourir au farming de rendement, prêter et d'emprunter. Cliquez sur les liens \"Commencer\" ci-dessous pour visiter les sites externes qui vous intéressent afin d'en apprendre davantage — et mettez votre FOX à votre service.",
-        "FOXy": "Achetez rapidement et facilement du FOXy, le premier jeton de rebasement DAO de l'industrie qui offre à la fois des récompenses de rendement et de profit."
+        "JINX": "Explorez les nombreuses possibilités pour fournir des liquidités, recourir au farming de rendement, prêter et d'emprunter. Cliquez sur les liens \"Commencer\" ci-dessous pour visiter les sites externes qui vous intéressent afin d'en apprendre davantage — et mettez votre JINX à votre service.",
+        "JINXy": "Achetez rapidement et facilement du JINXy, le premier jeton de rebasement DAO de l'industrie qui offre à la fois des récompenses de rendement et de profit."
       },
       "liquidityPools": "Pools de liquidité",
       "farming": "Farming",
       "borrowingAndLending": "Emprunter & prêter",
       "governanceTitle": "Gouvernance",
-      "governanceDescription": "En tant que détenteur de FOX, vous pouvez avoir votre mot à dire sur l'avenir de ShapeShift. Vous trouverez ci-dessous les propositions actives ou récemment adoptées de la DAO sur lesquelles les détenteurs de jetons votent.",
+      "governanceDescription": "En tant que détenteur de JINX, vous pouvez avoir votre mot à dire sur l'avenir de ShapeShift. Vous trouverez ci-dessous les propositions actives ou récemment adoptées de la DAO sur lesquelles les détenteurs de jetons votent.",
       "seeAllProposals": "Voir toutes les propositions",
       "availableToTradeOn": "Disponible pour les échanges sur",
       "dex": "DEX",
       "centralized": "Centralisé",
       "dappBack": {
-        "title": "✨ Récompenses en FOX et plus encore ! ✨",
-        "body": "Gagnez des récompenses en FOX en accomplissant des tâches sur DappBack",
+        "title": "✨ Récompenses en JINX et plus encore ! ✨",
+        "body": "Gagnez des récompenses en JINX en accomplissant des tâches sur DappBack",
         "cta": "Lancer DappBack"
       },
       "bondProtocol": {
-        "title": "Achetez de FOX à prix réduit !",
-        "body": "Achetez FOX à prix réduit avec BondProtocol",
+        "title": "Achetez de JINX à prix réduit !",
+        "body": "Achetez JINX à prix réduit avec BondProtocol",
         "cta": "Lancer BondProtocol"
       }
     },
@@ -1885,28 +1885,28 @@
     },
     "lp": {
       "title": "Fournisseurs de %{asset1}/%{asset2}",
-      "body": "Vous avez des %{asset1} et des %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FOX sous-jacents dans les jetons LP FOX/ETH que vous détenez se qualifieront pour l'Airdrop Areko.",
+      "body": "Vous avez des %{asset1} et des %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les JINX sous-jacents dans les jetons LP JINX/ETH que vous détenez se qualifieront pour l'Airdrop Areko.",
       "cta": "Déposer des liquidités"
     },
-    "foxTokenHolders": {
-      "title": "Détenteurs de jetons FOX",
-      "body": "Hodler des jetons FOX. Plus votre poche est grande, plus votre Airdrop Arkeo est grand.",
-      "cta": "Échanger contre des FOX",
-      "secondary": "Acheter des FOX"
+    "jinxTokenHolders": {
+      "title": "Détenteurs de jetons JINX",
+      "body": "Hodler des jetons JINX. Plus votre poche est grande, plus votre Airdrop Arkeo est grand.",
+      "cta": "Échanger contre des JINX",
+      "secondary": "Acheter des JINX"
     },
-    "foxFarmers": {
-      "title": "Farmeurs de LP FOX/ETH",
-      "body": "Gagnez jusqu'à %{apy} APR en misant vos jetons LP ETH/FOX dans la FOX Farm. DE PLUS, les FOX sous-jacents dans les jetons LP ETH/FOX que vous misez dans le Round 5 de la FOX Farm se qualifieront pour l'Airdrop Arkeo.",
-      "cta": "Miser des LP FOX/ETH"
+    "jinxFarmers": {
+      "title": "Farmeurs de LP JINX/ETH",
+      "body": "Gagnez jusqu'à %{apy} APR en misant vos jetons LP ETH/JINX dans la JINX Farm. DE PLUS, les JINX sous-jacents dans les jetons LP ETH/JINX que vous misez dans le Round 5 de la JINX Farm se qualifieront pour l'Airdrop Arkeo.",
+      "cta": "Miser des LP JINX/ETH"
     },
-    "foxyTokenHolders": {
-      "title": "Détenteurs de jetons FOXy",
-      "body": "Gagnez jusqu'à %{apy} APR sur vos FOX inactifs avec FOX Yieldy (FOXy). DE PLUS, les FOXy détenus dans votre porte-monnaie seront traités de la même manière que des FOX et se qualifieront pour l'Airdrop Arkeo.",
-      "cta": "Miser des jetons FOX"
+    "jinxyTokenHolders": {
+      "title": "Détenteurs de jetons JINXy",
+      "body": "Gagnez jusqu'à %{apy} APR sur vos JINX inactifs avec JINX Yieldy (JINXy). DE PLUS, les JINXy détenus dans votre porte-monnaie seront traités de la même manière que des JINX et se qualifieront pour l'Airdrop Arkeo.",
+      "cta": "Miser des jetons JINX"
     },
-    "foxEthProviders": {
-      "title": "LP de FOX/ETH sur Uniswap V2",
-      "body": "Vous avez %{asset1} et %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FOX sous-jacents dans les jetons LP FOX/ETH que vous détenez se qualifieront pour l'Airdrop Arkeo.",
+    "jinxEthProviders": {
+      "title": "LP de JINX/ETH sur Uniswap V2",
+      "body": "Vous avez %{asset1} et %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les JINX sous-jacents dans les jetons LP JINX/ETH que vous détenez se qualifieront pour l'Airdrop Arkeo.",
       "cta": "Déposer des liquidités"
     },
     "atomOsmoProviders": {
@@ -1933,7 +1933,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "Personnaliser le FOXatar",
+    "customizeJinxatar": "Personnaliser le JINXatar",
     "setAsAvatar": "Définir comme avatar",
     "floorPrice": "Prix plancher",
     "lastPrice": "Dernier prix",
@@ -1952,7 +1952,7 @@
     "emptyBody": "Ne vous inquiétez pas, nous avons envoyé une équipe de recherche pour ramener plus de NFT incroyables. En attendant, n'hésitez pas à regarder cet espace vide et à réfléchir au sens de l'existence."
   },
   "missions": {
-    "subtitle": "Missions FOX",
+    "subtitle": "Missions JINX",
     "missionEnded": "Mission terminée",
     "viewMission": "Voir la mission",
     "comingSoon": "Prochainement",
@@ -1970,14 +1970,14 @@
       "subtitle": "Explorez Optimism",
       "cta": "Commencez la mission"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Obtenez un NFT gratuit et personnalisable",
-      "subtitle": "Mintez un FOXatar",
+      "subtitle": "Mintez un JINXatar",
       "cta": "Commencez la mission"
     },
-    "foxArmy": {
-      "subtitle": "Rejoignez l'armée FOX",
-      "title": "Cagnotte de 20 000 FOX",
+    "jinxArmy": {
+      "subtitle": "Rejoignez l'armée JINX",
+      "title": "Cagnotte de 20 000 JINX",
       "cta": "Commencez la mission"
     },
     "yat": {

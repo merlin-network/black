@@ -5,7 +5,7 @@ import { useTranslate } from 'react-polyglot'
 import { generatePath, matchPath, useHistory } from 'react-router-dom'
 import AuroraBg from 'assets/aurorabg.jpg'
 import { AuroraBackground } from 'components/AuroraBackground'
-import { FoxIcon } from 'components/Icons/FoxIcon'
+import { JinxIcon } from 'components/Icons/JinxIcon'
 import { Page } from 'components/Layout/Page'
 import { SEO } from 'components/Layout/Seo'
 import { RawText, Text } from 'components/Text'
@@ -53,7 +53,7 @@ export const ConnectWallet = () => {
         <Flex flexDir='column' zIndex={4} width='full'>
           <Center flexDir='column' height='100vh' px={6}>
             <Circle size='100px' mb={6}>
-              <FoxIcon boxSize='100%' color='white' />
+              <JinxIcon boxSize='100%' color='white' />
             </Circle>
             <Flex
               flexDir='row'

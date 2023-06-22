@@ -4,9 +4,9 @@ import customParseFormat from 'dayjs/plugin/customParseFormat'
 import timezone from 'dayjs/plugin/timezone'
 import { useMemo } from 'react'
 import { useTranslate } from 'react-polyglot'
-import FoxMissionsBg from 'assets/fox-missions-bg.jpg'
-import FoxArmyBg from 'assets/foxarmy-bg.png'
-import FoxAtarBg from 'assets/foxatar-card-bg.png'
+import JinxMissionsBg from 'assets/jinx-missions-bg.jpg'
+import JinxArmyBg from 'assets/jinxarmy-bg.png'
+import JinxAtarBg from 'assets/jinxatar-card-bg.png'
 import SponsorBg from 'assets/mission-sponsor-bg.jpg'
 import OptimismBg from 'assets/op-card-bg.png'
 import YatBg from 'assets/yat-mission-bg.png'
@@ -14,7 +14,7 @@ import { Main } from 'components/Layout/Main'
 import { SEO } from 'components/Layout/Seo'
 import { ScrollCarousel } from 'components/ScrollCarousel/ScrollCarousel'
 import { RawText } from 'components/Text'
-import { FOX_MISSION_REQUEST_PAGE } from 'pages/Missions/constants'
+import { JINX_MISSION_REQUEST_PAGE } from 'pages/Missions/constants'
 
 import type { MissionProps } from './Mission'
 import { Mission } from './Mission'
@@ -30,10 +30,10 @@ export const Missions = () => {
   const missionItems: MissionProps[] = useMemo(() => {
     return [
       {
-        title: translate('missions.foxatar.title'),
-        subtitle: translate('missions.foxatar.subtitle'),
-        buttonText: translate('missions.foxatar.cta'),
-        coverImage: FoxAtarBg,
+        title: translate('missions.jinxatar.title'),
+        subtitle: translate('missions.jinxatar.subtitle'),
+        buttonText: translate('missions.jinxatar.cta'),
+        coverImage: JinxAtarBg,
         onClick: () => window.open('https://app.mercle.xyz/shapeshift/events'),
       },
       {
@@ -41,14 +41,14 @@ export const Missions = () => {
         subtitle: translate('missions.optimism.subtitle'),
         buttonText: translate('missions.optimism.cta'),
         coverImage: OptimismBg,
-        onClick: () => window.open('https://rewards.shapeshift.com/optimistic-fox-1'),
+        onClick: () => window.open('https://rewards.shapeshift.com/optimistic-jinx-1'),
         endDate: '2023-06-30 08:00 AM',
       },
       {
-        title: translate('missions.foxArmy.title'),
-        subtitle: translate('missions.foxArmy.subtitle'),
-        buttonText: translate('missions.foxArmy.cta'),
-        coverImage: FoxArmyBg,
+        title: translate('missions.jinxArmy.title'),
+        subtitle: translate('missions.jinxArmy.subtitle'),
+        buttonText: translate('missions.jinxArmy.cta'),
+        coverImage: JinxArmyBg,
         onClick: () => window.open('https://x.postmint.xyz/'),
         startDate: '2023-06-06 11:00 AM',
         endDate: '2023-06-13 11:00 AM',
@@ -112,7 +112,7 @@ export const Missions = () => {
               key='sponsored'
               title={translate('missions.getListed.title')}
               subtitle={translate('missions.getListed.subtitle')}
-              onClick={() => window.open(FOX_MISSION_REQUEST_PAGE)}
+              onClick={() => window.open(JINX_MISSION_REQUEST_PAGE)}
               buttonText={translate('missions.getListed.cta')}
               coverImage={SponsorBg}
             />
@@ -149,7 +149,7 @@ export const Missions = () => {
       >
         <Box
           mt='-4.5rem'
-          bgImage={FoxMissionsBg}
+          bgImage={JinxMissionsBg}
           backgroundSize={{ base: 'contain', md: 'cover' }}
           backgroundRepeat='no-repeat'
           backgroundPosition={{ base: 'center -12em', md: 'center 110%' }}
