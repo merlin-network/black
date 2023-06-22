@@ -11,7 +11,10 @@ import { WalletActions } from 'context/WalletProvider/actions'
 import { KeyManager } from 'context/WalletProvider/KeyManager'
 import { useWallet } from 'hooks/useWallet/useWallet'
 import { isMobile as isMobileApp } from 'lib/globals'
-import { jinxEthLpAssetId, jinxEthStakingAssetIdV6 } from 'state/slices/opportunitiesSlice/constants'
+import {
+  jinxEthLpAssetId,
+  jinxEthStakingAssetIdV6,
+} from 'state/slices/opportunitiesSlice/constants'
 import type { DefiType, OpportunityId } from 'state/slices/opportunitiesSlice/types'
 
 import { JinxTokenHolders } from './JinxTokenHolders'

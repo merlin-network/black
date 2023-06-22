@@ -4,9 +4,9 @@ import {
   bscChainId,
   deserializeNftAssetReference,
   ethChainId,
-  jinxatarAssetId,
   fromAccountId,
   fromAssetId,
+  jinxatarAssetId,
   optimismChainId,
   polygonChainId,
 } from '@shapeshiftoss/caip'

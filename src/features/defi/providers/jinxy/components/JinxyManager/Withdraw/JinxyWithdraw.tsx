@@ -122,7 +122,13 @@ export const JinxyWithdraw: React.FC<{
         component: ownProps => <Status {...ownProps} accountId={accountId} />,
       },
     }
-  }, [accountId, handleAccountIdChange, jinxyStakingContractAddress, translate, stakingAsset.symbol])
+  }, [
+    accountId,
+    handleAccountIdChange,
+    jinxyStakingContractAddress,
+    translate,
+    stakingAsset.symbol,
+  ])
 
   const handleBack = () => {
     history.push({

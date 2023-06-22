@@ -23,8 +23,6 @@ export const jinxatarAssetId: AssetId =
   'eip155:137/erc721:0x2e727c425a11ce6b8819b3004db332c12d2af2a2'
 export const jinxyAssetId: AssetId = 'eip155:710/erc20:0xdc49108ce5c57bc3408c3a5e95f3d864ec386ed3'
 
-
-
 export const cosmosAssetId: AssetId = 'cosmos:cosmoshub-4/slip44:118'
 export const osmosisAssetId: AssetId = 'cosmos:osmosis-1/slip44:118'
 export const thorchainAssetId: AssetId = 'cosmos:thorchain-mainnet-v1/slip44:931'

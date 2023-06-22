@@ -1,6 +1,6 @@
 https://app.shapeshift.com
 https://app.shapeshift.com/#/connect-wallet
-https://app.shapeshift.com/#/demo/fox
+https://app.shapeshift.com/#/demo/jinx
 https://app.shapeshift.com/#/demo/defi
 https://app.shapeshift.com/#/demo/defi/earn
 https://app.shapeshift.com/#/demo/trade

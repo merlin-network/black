@@ -21,15 +21,15 @@ import {
   ethJinxStakingUserDataResolver,
 } from './resolvers/ethJinxStaking'
 import {
-  jinxyStakingOpportunitiesMetadataResolver,
-  jinxyStakingOpportunitiesUserDataResolver,
-  jinxyStakingOpportunityIdsResolver,
-} from './resolvers/jinxy'
-import {
   idleStakingOpportunitiesMetadataResolver,
   idleStakingOpportunitiesUserDataResolver,
   idleStakingOpportunityIdsResolver,
 } from './resolvers/idle'
+import {
+  jinxyStakingOpportunitiesMetadataResolver,
+  jinxyStakingOpportunitiesUserDataResolver,
+  jinxyStakingOpportunityIdsResolver,
+} from './resolvers/jinxy'
 import {
   osmosisLpOpportunitiesMetadataResolver,
   osmosisLpOpportunityIdsResolver,
