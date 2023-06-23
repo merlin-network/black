@@ -17,7 +17,15 @@ export const jinxOnGnosisAssetId: AssetId =
 export const jinxAssetId: AssetId = 'eip155:1/erc20:0xc770eefad204b5180df6a14ee197d99d808ee52d'
 export const jinxatarAssetId: AssetId =
   'eip155:137/erc721:0x2e727c425a11ce6b8819b3004db332c12d2af2a2'
+<<<<<<< HEAD
 export const jinxyAssetId: AssetId = 'eip155:1/erc20:0xdc49108ce5c57bc3408c3a5e95f3d864ec386ed3'
+=======
+export const foxyAssetId: AssetId = 'eip155:710/erc20:0xdc49108ce5c57bc3408c3a5e95f3d864ec386ed3'
+export const jinxAssetId: AssetId = 'eip155:710/erc20:0xc770eefad204b5180df6a14ee197d99d808ee52d'
+export const jinxatarAssetId: AssetId =
+  'eip155:137/erc721:0x2e727c425a11ce6b8819b3004db332c12d2af2a2'
+export const jinxyAssetId: AssetId = 'eip155:710/erc20:0xdc49108ce5c57bc3408c3a5e95f3d864ec386ed3'
+>>>>>>> release
 
 export const cosmosAssetId: AssetId = 'cosmos:cosmoshub-4/slip44:118'
 export const osmosisAssetId: AssetId = 'cosmos:osmosis-1/slip44:118'

@@ -50,17 +50,26 @@ import { breakpoints } from 'theme/theme'
 import { AssetActions } from './components/AssetActions'
 import { BondProtocolCta } from './components/BondProtocolCta'
 import { DappBack } from './components/DappBack'
+<<<<<<< HEAD
 import { JinxChart } from './components/JinxChart'
 import { JinxTab } from './components/JinxTab'
+=======
+>>>>>>> release
 import { Governance } from './components/Governance'
+import { JinxChart } from './components/JinxChart'
+import { JinxTab } from './components/JinxTab'
 import { Layout } from './components/Layout'
 import { MainOpportunity } from './components/MainOpportunity'
 import { OtherOpportunities } from './components/OtherOpportunities/OtherOpportunities'
 import { Total } from './components/Total'
 import type { TradeOpportunitiesBucket } from './components/TradeOpportunities'
 import { TradeOpportunities } from './components/TradeOpportunities'
+<<<<<<< HEAD
 import { jinxTradeOpportunitiesBuckets, jinxyTradeOpportunitiesBuckets } from './JinxCommon'
+=======
+>>>>>>> release
 import { useOtherOpportunities } from './hooks/useOtherOpportunities'
+import { jinxTradeOpportunitiesBuckets, jinxyTradeOpportunitiesBuckets } from './JinxCommon'
 
 export enum JinxPageRoutes {
   Jinx = '/jinx/jinx',

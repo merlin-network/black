@@ -3,8 +3,12 @@ import type { PartialRecord } from 'lib/utils'
 import type { Nominal } from 'types/common'
 
 import type { CosmosSdkStakingSpecificUserStakingOpportunity } from './resolvers/cosmosSdk/types'
+<<<<<<< HEAD
 import type { JinxySpecificUserStakingOpportunity } from './resolvers/jinxy/types'
+=======
+>>>>>>> release
 import type { IdleStakingSpecificMetadata } from './resolvers/idle/types'
+import type { JinxySpecificUserStakingOpportunity } from './resolvers/jinxy/types'
 import type { ThorchainSaversStakingSpecificMetadata } from './resolvers/thorchainsavers/types'
 
 export enum DefiType {

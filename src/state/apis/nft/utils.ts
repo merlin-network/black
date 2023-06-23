@@ -4,9 +4,13 @@ import {
   bscChainId,
   deserializeNftAssetReference,
   ethChainId,
+<<<<<<< HEAD
   jinxatarAssetId,
+=======
+>>>>>>> release
   fromAccountId,
   fromAssetId,
+  jinxatarAssetId,
   optimismChainId,
   polygonChainId,
 } from '@shapeshiftoss/caip'

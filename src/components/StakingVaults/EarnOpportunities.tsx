@@ -1,7 +1,11 @@
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Box, Button, HStack } from '@chakra-ui/react'
 import type { AccountId, AssetId } from '@shapeshiftoss/caip'
+<<<<<<< HEAD
 import { jinxAssetId, jinxyAssetId, fromAssetId } from '@shapeshiftoss/caip'
+=======
+import { fromAssetId, jinxAssetId, jinxyAssetId } from '@shapeshiftoss/caip'
+>>>>>>> release
 import qs from 'qs'
 import { useEffect, useMemo } from 'react'
 import { NavLink, useHistory, useLocation } from 'react-router-dom'

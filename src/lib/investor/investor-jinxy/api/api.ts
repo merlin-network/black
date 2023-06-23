@@ -28,9 +28,14 @@ import type {
   EstimateApproveFeesInput,
   EstimateFeesTxInput,
   EstimateWithdrawFeesInput,
+<<<<<<< HEAD
   JinxyAddressesType,
   JinxyOpportunityInputData,
+=======
+>>>>>>> release
   GetTokeRewardAmount,
+  JinxyAddressesType,
+  JinxyOpportunityInputData,
   RebaseEvent,
   RebaseHistory,
   SignAndBroadcastTx,
@@ -59,7 +64,16 @@ export type ConstructorArgs = {
   chainReference?: EthereumChainReference
 }
 
+<<<<<<< HEAD
 export const transformData = ({ tvl, apy, expired, ...contractData }: JinxyOpportunityInputData) => {
+=======
+export const transformData = ({
+  tvl,
+  apy,
+  expired,
+  ...contractData
+}: JinxyOpportunityInputData) => {
+>>>>>>> release
   return {
     type: DefiType.Staking,
     provider: 'ShapeShift',

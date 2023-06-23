@@ -12,8 +12,12 @@ import type {
 import type { MarketService } from './api'
 import { CoinCapMarketService } from './coincap/coincap'
 import { CoinGeckoMarketService } from './coingecko/coingecko'
+<<<<<<< HEAD
 import { JinxyMarketService } from './jinxy/jinxy'
+=======
+>>>>>>> release
 import { IdleMarketService } from './idle/idle'
+import { JinxyMarketService } from './jinxy/jinxy'
 import { OsmosisMarketService } from './osmosis/osmosis'
 // import { YearnTokenMarketCapService } from './yearn/yearn-tokens'
 // import { YearnVaultMarketCapService } from './yearn/yearn-vaults'

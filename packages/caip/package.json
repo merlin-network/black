@@ -1,6 +1,10 @@
 {
   "name": "@shapeshiftoss/caip",
+<<<<<<< HEAD
   "version": "8.15.3",
+=======
+  "version": "8.15.1",
+>>>>>>> release
   "description": "CAIP Implementation",
   "repository": "https://github.com/shapeshift/web",
   "license": "MIT",

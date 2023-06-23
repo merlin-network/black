@@ -8,10 +8,14 @@ import {
   cosmosAssetId,
   dogeAssetId,
   ethAssetId,
+<<<<<<< HEAD
   jinxyAssetId,
+=======
+>>>>>>> release
   fromAccountId,
   fromAssetId,
   gnosisAssetId,
+  jinxyAssetId,
   ltcAssetId,
   optimismAssetId,
   osmosisAssetId,

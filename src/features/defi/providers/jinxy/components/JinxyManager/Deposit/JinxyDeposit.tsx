@@ -56,7 +56,15 @@ export const JinxyDeposit: React.FC<{
     assetNamespace,
   } = query
   // ContractAssetId
+<<<<<<< HEAD
   const assetId = toAssetId({ chainId, assetNamespace, assetReference: jinxyStakingContractAddress })
+=======
+  const assetId = toAssetId({
+    chainId,
+    assetNamespace,
+    assetReference: jinxyStakingContractAddress,
+  })
+>>>>>>> release
 
   const opportunityMetadataFilter = useMemo(() => ({ stakingId: assetId as StakingId }), [assetId])
   const opportunityMetadata = useAppSelector(state =>

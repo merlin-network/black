@@ -1,5 +1,15 @@
 import type { ToAssetIdArgs } from '@shapeshiftoss/caip'
+<<<<<<< HEAD
 import { ethChainId, jinxyAssetId, fromAccountId, fromAssetId, toAssetId } from '@shapeshiftoss/caip'
+=======
+import {
+  ethChainId,
+  fromAccountId,
+  fromAssetId,
+  jinxyAssetId,
+  toAssetId,
+} from '@shapeshiftoss/caip'
+>>>>>>> release
 import dayjs from 'dayjs'
 import { bn, bnOrZero } from 'lib/bignumber/bignumber'
 import { jinxyApi } from 'state/apis/jinxy/jinxyApi'

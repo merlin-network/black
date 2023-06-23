@@ -1,5 +1,9 @@
 import type { AccountId } from '@shapeshiftoss/caip'
+<<<<<<< HEAD
 import { ethChainId, jinxAssetId, jinxatarAssetId, fromAccountId } from '@shapeshiftoss/caip'
+=======
+import { ethChainId, fromAccountId, jinxAssetId, jinxatarAssetId } from '@shapeshiftoss/caip'
+>>>>>>> release
 import type { Transaction } from '@shapeshiftoss/chain-adapters'
 import { TxStatus } from '@shapeshiftoss/unchained-client'
 import { IDLE_PROXY_1_CONTRACT_ADDRESS, IDLE_PROXY_2_CONTRACT_ADDRESS } from 'contracts/constants'

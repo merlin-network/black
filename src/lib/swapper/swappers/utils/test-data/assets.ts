@@ -5,10 +5,15 @@ import {
   bscChainId,
   ethAssetId,
   ethChainId,
+<<<<<<< HEAD
   jinxAssetId,
   jinxOnGnosisAssetId,
+=======
+>>>>>>> release
   gnosisAssetId,
   gnosisChainId,
+  jinxAssetId,
+  jinxOnGnosisAssetId,
   optimismAssetId,
   optimismChainId,
   thorchainAssetId,

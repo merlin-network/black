@@ -88,7 +88,12 @@ export const AssetActions: React.FC<JinxTabProps> = ({ assetId }) => {
   )
 
   const receiveButtonTranslation = useMemo(
+<<<<<<< HEAD
     () => (!isDemoWallet && walletSupportsETH ? 'plugins.jinxPage.receive' : 'common.connectWallet'),
+=======
+    () =>
+      !isDemoWallet && walletSupportsETH ? 'plugins.jinxPage.receive' : 'common.connectWallet',
+>>>>>>> release
     [isDemoWallet, walletSupportsETH],
   )
 

@@ -248,8 +248,13 @@ export const TermsOfService = () => {
             <Link href='https://discord.com/invite/shapeshift'>
               <RawText as='strong'>here</RawText>
             </Link>{' '}
+<<<<<<< HEAD
             and see the channel titled &quot;governance&quot;. The smart contract for the JINX Tokens
             can be found{' '}
+=======
+            and see the channel titled &quot;governance&quot;. The smart contract for the JINX
+            Tokens can be found{' '}
+>>>>>>> release
             <Link href='https://etherscan.io/token/0xc770eefad204b5180df6a14ee197d99d808ee52d'>
               <RawText as='strong'>here</RawText>
             </Link>

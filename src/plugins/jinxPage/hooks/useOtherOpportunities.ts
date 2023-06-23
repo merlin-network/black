@@ -1,9 +1,20 @@
 import type { AssetId } from '@shapeshiftoss/caip'
+<<<<<<< HEAD
 import { jinxAssetId, jinxyAssetId, fromAccountId, fromAssetId } from '@shapeshiftoss/caip'
 import { useMemo } from 'react'
 import { bnOrZero } from 'lib/bignumber/bignumber'
 import { jinxyAddresses } from 'lib/investor/investor-jinxy'
 import { jinxEthLpAssetId, jinxEthStakingAssetIdV6 } from 'state/slices/opportunitiesSlice/constants'
+=======
+import { fromAccountId, fromAssetId, jinxAssetId, jinxyAssetId } from '@shapeshiftoss/caip'
+import { useMemo } from 'react'
+import { bnOrZero } from 'lib/bignumber/bignumber'
+import { jinxyAddresses } from 'lib/investor/investor-jinxy'
+import {
+  jinxEthLpAssetId,
+  jinxEthStakingAssetIdV6,
+} from 'state/slices/opportunitiesSlice/constants'
+>>>>>>> release
 import type { StakingId } from 'state/slices/opportunitiesSlice/types'
 import { DefiType } from 'state/slices/opportunitiesSlice/types'
 import {
